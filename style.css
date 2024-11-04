@@ -1,0 +1,75 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background: #0a6847;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: 10px;
+  background: #f9f9f9;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+}
+
+li:nth-child(odd) {
+  background: #f1f1f1;
+}
+
+.deleteButton {
+  background: #dc3545;
+  border: none;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.modifyButton {
+  background: #005c78;
+}
+
+li > div {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 10px;
+}
