@@ -18,9 +18,6 @@ function addTask(task) {
     prompt("Sheno daten e perfundimit(formati: MM/DD/YYYY): ")
   );
   const datePrompt = date.toLocaleDateString();
-  if (now > datePrompt) {
-    alert("Gabim");
-  }
   dueDate.textContent = `Data e Fundit: ${datePrompt}`;
   dueDate.classList.add("dueDate");
   deleteButton.addEventListener("click", () => {
