@@ -13,9 +13,14 @@ function addTask(task) {
   modifyButton.textContent = "Modifiko";
   deleteButton.textContent = "Fshij";
   const dueDate = document.createElement("p");
-  const date = new Date();
-  const datePrompt = prompt("Sheno daten e perfundimit(formati: YYYY-MM-DD): ");
-  date.setDate(datePrompt);
+  const now = new Date().toLocaleDateString();
+  const date = new Date(
+    prompt("Sheno daten e perfundimit(formati: MM/DD/YYYY): ")
+  );
+  const datePrompt = date.toLocaleDateString();
+  if (now > datePrompt) {
+    alert("Gabim");
+  }
   dueDate.textContent = `Data e Fundit: ${datePrompt}`;
   dueDate.classList.add("dueDate");
   deleteButton.addEventListener("click", () => {
